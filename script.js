@@ -14,7 +14,7 @@ function calculateTime(name,delay){
 
 let promise1=calculateTime("Promise 1",1000);
 let promise2=calculateTime("Promise 2",2000);
-let promise3=calculateTime("Promise 3",3000);
+let promise3=calculateTime("Promise 3",1000);
 
 Promise.all([promise1,promise2,promise3]).then((data)=>{
 	loadingRow.remove()
