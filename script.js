@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let tableBody=document.getElementById("output");
 let loadingRow=document.getElementById("loading")
 
@@ -21,7 +20,7 @@ let promise3=new Promise((resolve,reject)=>{
 })
 
 Promise.all([promise1,promise2,promise3]).then((data)=>{
-    loadingRow.style.display="none"
+  loadingRow.remove()
 
     let row1=tableBody.insertRow(0);
     let row1Cell1=row1.insertCell(0);
